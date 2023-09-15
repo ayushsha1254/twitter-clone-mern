@@ -27,12 +27,8 @@ require('./models/post')
 app.use(require("./routes/createPost"))
 app.use(require('./routes/user'))
 
-app.use(express.static(path.join(__dirname,"./client/built")));
-
 app.get('*',function(_,res){
-    res.sendFile(path.join(__dirname,"./client/built/index.html"),function(err){
-        res.status(500).send(err);
-    })
+    res.status(404).json({message:"Route Not Found"})
 })
 
 
