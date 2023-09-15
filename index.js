@@ -13,7 +13,16 @@ require('./models/model')
 app.use(express.json())
 app.use(require('./routes/auth'))
 mongoose.connect(mongoUrl)
-app.use(cors())
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5000",
+      "*",
+      "https://twitter-clone-mern-sqtg.vercel.app/",
+    ],
+  })
+);
 require('./models/post')
 app.use(require("./routes/createPost"))
 app.use(require('./routes/user'))
