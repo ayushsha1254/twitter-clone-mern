@@ -9,13 +9,11 @@ const__dirname = path.resolve();
 
 app.use(
     cors({
-      origin: [
-        "http://localhost:3000",
-        "http://localhost:5000",
-        "*",
-        "https://twitter-clone-mern-sqtg.vercel.app/",
-      ],
-    })
+  "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 200
+})
   );
 
 app.use((req, res, next) => {
@@ -34,15 +32,8 @@ require("./models/post");
 app.use(require("./routes/createPost"));
 app.use(require("./routes/user"));
 
-app.use(express.static(path.join(__dirname, "./client/built")));
-
 app.get("*", function (_, res) {
-  res.sendFile(
-    path.join(__dirname, "./client/built/index.html"),
-    function (err) {
-      res.status(500).send(err);
-    }
-  );
+  return res.status(404).json({message:"Route not found"})
 });
 
 mongoose.connection.on("connected", () => {
