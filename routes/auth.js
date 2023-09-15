@@ -8,6 +8,18 @@ const jwt=require('jsonwebtoken')
 const {Jwt_secret} = require('../keys');
 const requirelogin = require('../middlewares/requirelogin');
 
+app.use(
+    cors({
+      origin: [
+        "http://localhost:3000",
+        "http://localhost:5000",
+        "*",
+        "https://twitter-clone-mern-sqtg.vercel.app/",
+      ],
+    })
+  );
+  
+
 router.get('/',(req,res)=>{
     res.send("hello")
 })
