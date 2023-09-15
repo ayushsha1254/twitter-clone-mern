@@ -8,7 +8,7 @@ const jwt=require('jsonwebtoken')
 const {Jwt_secret} = require('../keys');
 const requirelogin = require('../middlewares/requirelogin');
 
-app.use(
+router.use(
     cors({
       origin: [
         "http://localhost:3000",
