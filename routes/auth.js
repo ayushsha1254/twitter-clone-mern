@@ -8,7 +8,6 @@ const jwt=require('jsonwebtoken')
 const {Jwt_secret} = require('../keys');
 const requirelogin = require('../middlewares/requirelogin');
 
-router.use(cors());
 router.get('/',(req,res)=>{
     res.send("hello")
 })
