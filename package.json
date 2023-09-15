@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "Abhishek Kumar",
+  "author": "Ayush Sharma",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

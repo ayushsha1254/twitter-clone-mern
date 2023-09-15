@@ -4,7 +4,7 @@ import "./Tweet.css";
 import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
 import { useNavigate } from "react-router-dom";
 import ClearIcon from "@mui/icons-material/Clear";
-
+import { API_URL } from "../../constants";
 export default function Tweet() {
   const [body, setBody] = useState("");
   const [image, setImage] = useState("");
@@ -13,17 +13,12 @@ export default function Tweet() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(
-      `http://localhost:5000/user/${
-        JSON.parse(localStorage.getItem("user"))?._id
-      }`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + localStorage.getItem("jwt"),
-        },
-      }
-    )
+    fetch(`${API_URL}/user/${JSON.parse(localStorage.getItem("user"))?._id}`, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("jwt"),
+      },
+    })
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
@@ -34,7 +29,7 @@ export default function Tweet() {
   useEffect(() => {
     // saving post to mongodb
     if (url) {
-      fetch("http://localhost:5000/createPost", {
+      fetch(`${API_URL}/createPost`, {
         method: "post",
         headers: {
           "Content-type": "application/json",

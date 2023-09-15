@@ -4,6 +4,7 @@ import "./ProfilePic.css";
 import { Avatar } from "@mui/material";
 import AddAPhotoOutlinedIcon from "@mui/icons-material/AddAPhotoOutlined";
 import { IconButton } from "@mui/material";
+import { API_URL } from "../../constants";
 export default function ProfilePic({ changeProfile }) {
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
@@ -54,7 +55,7 @@ export default function ProfilePic({ changeProfile }) {
   };
 
   const postPic = () => {
-    fetch("http://localhost:5000/uploadProfilePic", {
+    fetch(`${API_URL}/uploadProfilePic`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -74,7 +75,7 @@ export default function ProfilePic({ changeProfile }) {
   };
 
   const postBgPic = () => {
-    fetch("http://localhost:5000/uploadBgProfilePic", {
+    fetch(`${API_URL}/uploadBgProfilePic`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -94,7 +95,7 @@ export default function ProfilePic({ changeProfile }) {
   };
 
   const updateBio = () => {
-    fetch("http://localhost:5000/bio", {
+    fetch(`${API_URL}/bio`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
