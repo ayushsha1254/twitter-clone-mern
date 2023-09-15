@@ -1,0 +1,13 @@
+.Sad{
+    width: 7rem;
+    margin: 6rem 7rem;
+}
+.Message h1{
+    text-align: center;
+    margin-top: -3rem;
+}
+.Message p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 19px;
+}

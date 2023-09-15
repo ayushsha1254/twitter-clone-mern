@@ -1,0 +1,34 @@
+.Widget{
+    margin-left: 2rem;
+}
+.WidgetInput{
+    display: flex;
+    align-items: center;
+    background-color:rgb(224, 224, 224);
+    width: 22rem;
+    height: 3rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+}
+.WidgetInput input{
+    border: none;
+    outline: none;
+    background-color: rgb(224, 224, 224);
+}
+.WidgetInput ::placeholder, .searchIcon{
+    color:#536471;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+.WidgetContainer{
+    margin-top: 5rem;
+    width: 22rem;
+    position: absolute;
+}
+.WidgetContainer h2{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}

@@ -1,0 +1,92 @@
+.Sidebar{
+    border-right: 1px solid #e6ecf0;
+    margin-left: 8rem;
+    width: 18rem;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+
+}
+.twitlogo{
+    width: 13%;
+    padding: 5px 20px;
+}
+.SidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SidebarOption:hover{
+    background-color: rgb(210, 212, 214);
+    border-radius: 30px;
+    width:70%;
+}
+.SidebarOption--active{
+    font-weight: 900;
+}
+
+.icon{
+    padding: 20px;
+}
+
+.SidebarOption h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    word-wrap: break-word;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.tweet{
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    width: 14rem;
+    border:  solid rgb(29, 155, 240);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.ProfLogOut{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+}
+.ProfLogOut div{
+    margin-left: -2rem;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.ProfLogOut div p{
+    color: rgb(83, 100, 113);
+}
+.RespSidebar{
+    display: none;
+}
+
+@media(max-width:991px){
+    .Sidebar{
+        display: none;
+    }
+    .RespSidebar{
+        display: block;
+    }
+    .tweetIcon{
+        width: 2rem;
+        padding: 2rem 0;
+    }
+    .Nav{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .BottomLogo{
+        padding: 2rem 0;
+    }
+
+}

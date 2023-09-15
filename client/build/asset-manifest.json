@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61fb75b5.css",
+    "main.js": "/static/js/main.036d63bc.js",
+    "static/media/logo.png": "/static/media/logo.9515405b13671d6f9956.png",
+    "static/media/postImg.jfif": "/static/media/postImg.49ecefaf1872db8f5158.jfif",
+    "static/media/twitterprofile.webp": "/static/media/twitterprofile.cef8018ce879067403f8.webp",
+    "static/media/profileLogo.jpg": "/static/media/profileLogo.d6f460ec0ddc7798ab5d.jpg",
+    "static/media/sad.png": "/static/media/sad.19554332e7082463c389.png",
+    "index.html": "/index.html",
+    "main.61fb75b5.css.map": "/static/css/main.61fb75b5.css.map",
+    "main.036d63bc.js.map": "/static/js/main.036d63bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61fb75b5.css",
+    "static/js/main.036d63bc.js"
+  ]
+}

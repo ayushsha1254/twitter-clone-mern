@@ -1,0 +1,38 @@
+/* body{
+    background: #3e65fe;
+} */
+.LoginPage img{
+    width: 4%;
+    object-fit: contain;
+}
+.LoginPage{
+    display: flex;
+    justify-content: space-around;
+    /*  #e0dcdc */
+    box-shadow: 1px 5px 5px #3e65fe ;
+    background: #fff;
+}
+
+.NavMenu{
+    display: flex;
+}
+.NavMenu li{
+    list-style: none;
+    padding: 25px 15px;
+}
+.NavMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+@media(max-width:991px){
+    .NavMenu a {
+        font-size: 18px;
+    }
+    .LoginPage img {
+        width: 12%;
+    }
+}

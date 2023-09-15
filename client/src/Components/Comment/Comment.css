@@ -1,0 +1,102 @@
+.darkBg1{
+    backdrop-filter: brightness(93%);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    z-index: 999;
+}
+.darkBg1::-webkit-scrollbar {
+  display: none;
+}
+.centered1{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.CommentModal,.ShowComment {
+    width: 38rem;
+    background: rgba(255,255,255,1.00);
+    z-index: 10;
+    border-radius: 16px;
+  }
+  .ShowComment{
+    padding-bottom: 3rem;
+    overflow-y: scroll;
+    height: 10rem;
+  }
+  .CommentBox{
+    margin-top: 3rem;
+    display: flex;
+  }
+  
+  .closebtn{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .Avatar{
+    margin-left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .CommentBox textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    overflow: hidden;
+    resize: none;
+  }
+  .CommentBox ::placeholder{
+    font-size: 20px;
+    color:#536471;
+    padding:  0 2px;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.Replybtn {
+    background-color: rgb(29, 155, 240);
+    margin-top: 5rem;
+    margin-left: 30rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+  }
+  
+  .CommentBox h3{
+    margin: 10px 20px;
+  }
+ 
+.allcomments {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.allcomments h3, .allcomments p{
+  margin-left: 2rem;
+  margin-top: 10px;
+}
+
+@media(max-width:991px){
+  .CommentModal{
+    width: 18rem;
+    height: 22rem;
+  }
+  .ShowComment{
+    margin-top: 3rem;
+    width: 18rem;
+  }
+  .Replybtn{
+    margin-top: 2rem;
+    margin-left: 10rem;
+  }
+}

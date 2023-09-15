@@ -1,0 +1,111 @@
+.darkBg{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    overflow: hidden;
+}
+.centered{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.LogoutModal {
+    width: 335px;
+    height: 370px;
+    background: rgba(255,255,255,1.00);
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  }
+  
+  .modalHeader {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .modalHeader img{
+    width: 3rem;
+    position: relative;
+    left: 9rem;
+    top: 2rem;
+  }
+  .heading {
+    color: rgb(15, 20, 25);
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin: 40px 40px;
+  }
+  
+  .ModalContent {
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    text-align: left;
+    margin-top: -28px;
+    padding: 0 40px;
+  }
+  
+  /* .modalActions {
+    display: grid;
+  } */
+  
+  .actionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .logoutbtn {
+    background-color: rgb(15, 20, 25);
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0.8rem 6.5rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+  }
+  
+  .logoutbtn:hover {
+    box-shadow: 0 10px 20px -10px rgba(39, 44, 48);
+    background: rgba(39, 44, 48);
+  }
+  
+  .cancelbtn{
+    background-color: rgb(0,0,0,0);
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0.8rem 6.5rem;
+    border-radius: 5rem;
+    border: 1px solid rgb(207, 217, 222);;
+    color: black;
+  }
+  
+  .cancelbtn:hover {
+    box-shadow: none;
+    background: rgba(15,20,25,0.1);
+  }
+
+
+  @media(max-width:991px){
+    
+.LogoutModal {
+  width: 311px;
+}
+.modalHeader img {
+  left: 8rem;
+}
+  }

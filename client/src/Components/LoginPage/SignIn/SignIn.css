@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.formContainer1{
+    background: #fff;
+    padding: 90px 120px;
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.signinlogo{
+    width: 12%;
+    margin-bottom: 20px;
+}
+.formContainer1 h2{
+    margin-bottom: 20px;
+    font-family: system-ui;
+}
+
+.formContainer1 button{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #999;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 15px;
+}
+.formContainer1 button img{
+    width: 12%;
+    margin-right: 10px;
+}
+.formContainer1 span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    background-color: #fff;
+    font-size: 20px;
+    margin-top: -16px;
+}
+
+.formContainer1 input{
+    width: 96%;
+    background: transparent;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+::placeholder{
+    font-weight: 500;
+    color: #333;
+}
+
+#signin{
+    background: black;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.message{
+    color: red;
+}
+
+@media(max-width:991px){
+    .formContainer1 {
+        padding: 6px 30px;
+        width: 227px;
+        top: 56%;
+    }
+    .formContainer1 h2 {
+    margin-bottom: 4px;
+    font-size: 18px;
+    }
+    .formContainer1 button {
+        margin: 20px 0px;
+        font-size: 13px;
+    }
+
+}

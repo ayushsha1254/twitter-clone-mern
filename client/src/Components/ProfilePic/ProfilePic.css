@@ -1,0 +1,126 @@
+.ProfilePic{
+    overflow: hidden;
+}
+.ChangeProfile{
+width: 36rem;
+height: 36rem;
+background: rgba(255,255,255,1.00);
+z-index: 10;
+border-radius: 16px;
+box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+top: 50%;
+position: fixed;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.ChangeProfHeader{
+    display: flex;
+    margin: 1.5rem 1rem;
+}
+.ChangeProfHeader h3{
+    margin-left: 3rem;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}
+.savebtn{
+    margin-left: 17rem;
+    width: 4rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 5rem;
+    color: white;
+    border: 1px solid #c3c8cb;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.BgChange{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 35.3rem;
+    height: 13rem;
+    margin-left: 5px;
+}
+.changeBg{
+    position: relative;
+    top: 4.5rem;
+    left: 16rem;
+}
+.changeProfile{
+    position: relative;
+    bottom: 10.5rem;
+    left: 3.8rem;
+    cursor: pointer;
+}
+.bgRem, .picRem{
+    /* position: relative; */
+    color: white;
+    border-radius: 13rem;
+    margin-top: 1rem;
+    background: dodgerblue;
+    border: dodgerblue;
+    width: 9rem;
+    cursor: pointer;
+    height: 2rem;
+}
+.bgRem{
+    top: -8rem;
+    left: 24rem;
+}
+.picRem{
+    top: -5rem;
+    left: 15rem;
+}
+.editfields{
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+.editfields input{
+    width: 32rem;
+    height: 3rem;
+}
+.editfields input[type="text" i] {
+    padding: 0px 15px;
+    font-size: 18px;
+}
+.removebtn{
+    margin-top: -10rem;
+    margin-left: 24rem;
+}
+@media(max-width:991px){
+.ChangeProfile {
+    width: 19.5rem;
+}
+.BgChange {
+    width: 100%;
+    margin-left: 0;
+}
+.changeBg {
+    left: 8rem;
+}
+.changeProfile{
+    bottom: 8.5rem;
+    left: 2rem;
+}
+.ChangeProfHeader h3 {
+    font-size: 17px;
+    margin-left: 0;
+}
+.savebtn {
+    margin-left: 6rem;
+    width: 4rem;
+    height: 2rem;
+}
+.editfields input {
+    width: 16rem;
+    border: 1px solid black;
+}
+.bgRem, .picRem{
+    margin-top: 0.5rem;
+}
+.removebtn {
+    margin-top: -8rem;
+    margin-left: 10rem;
+}
+}
